@@ -8,4 +8,11 @@ pipeline {
             }
         }
     }
+    stages {
+        stage('two') {
+            steps {
+                sh 'lscpu'
+            }
+        }
+    }
 }
