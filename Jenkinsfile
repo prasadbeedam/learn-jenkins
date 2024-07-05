@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('two') {
             steps {
-                sh 'lscpu'
+                 sh 'lscpu'
             }
         }
     }
