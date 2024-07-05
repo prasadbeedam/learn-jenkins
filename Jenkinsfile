@@ -1,18 +1,16 @@
 pipeline {
-    agent any
-
+    agent any 
+    
     stages {
         stage('one') {
             steps {
-                 sh 'touch file1'
+                sh 'touch file1'
             }
         }
-    }
-    stages {
         stage('two') {
             steps {
-                 sh 'lscpu'
-            }
+                sh 'lscpu'
+            }    
         }
     }
 }
