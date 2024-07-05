@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('one') {
             steps {
-                echo 'Hello World'
+                 sh 'touch file1'
             }
         }
     }
