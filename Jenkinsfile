@@ -3,17 +3,17 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                echo 'hello all' 
+                sh 'echo this is build' 
             }
         }
         stage('Test') { 
             steps {
-                sh 'lscpu' 
+                sh 'echo this is test' 
             }
         }
         stage('Deploy') { 
             steps {
-                sh 'lsmem' 
+               sh 'echo this is deploy'  
             }
         }
     }
