@@ -27,7 +27,9 @@ pipeline {
         }
         stage('Deploy') { 
             steps {
-               sh 'echo this is deploy'  
+               sh 'echo this is deploy'
+               sh 'echo trigger test'
+
             }
         }
     }
