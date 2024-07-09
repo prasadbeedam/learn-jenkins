@@ -35,7 +35,7 @@
 
 pipeline {
     agent {
-        lable 'AGENT-1'
+        label 'AGENT-1'
     }
     options{
         timeout(time: 30, unit: MINUTES)
