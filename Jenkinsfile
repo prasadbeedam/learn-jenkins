@@ -44,7 +44,7 @@ pipeline {
         Greeting = 'hello-world'
     }
     perameters{
-
+        //
     }
     stages{
         stage('build'){
