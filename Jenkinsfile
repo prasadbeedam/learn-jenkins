@@ -37,15 +37,15 @@ pipeline {
     agent {
         label 'AGENT-1'
     }
-    options{
-        timeout(time: 30, unit: MINUTES)
-    }
-    environment{
-        Greeting = 'hello-world'
-    }
-    // perameters{
-    //     //
+    // options{
+    //     timeout(time: 30, unit: MINUTES)
     // }
+    // environment{
+    //     Greeting = 'hello-world'
+    // }
+    // // perameters{
+    // //     //
+    // // }
     stages{
         stage('build'){
             steps {
