@@ -43,9 +43,9 @@ pipeline {
     environment{
         Greeting = 'hello-world'
     }
-    perameters{
-        //
-    }
+    // perameters{
+    //     //
+    // }
     stages{
         stage('build'){
             steps {
