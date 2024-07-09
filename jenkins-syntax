@@ -1,0 +1,26 @@
+pipeline {
+    agent {
+        lable 'java-agent'
+    }
+    options{
+        timeout(time: 30, unit: MINUTES)
+    }
+    environment{
+        Greeting = 'hello-world'
+    }
+    perameters{
+
+    }
+    stages{
+        stage('build'){
+            steps {
+                sh 'echo this is build'
+            }
+        }
+        stage('test'){
+            steps {
+                sh 'echo this is test'
+            }
+        }
+    }
+}
